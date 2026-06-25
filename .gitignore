@@ -29,11 +29,11 @@ enrollments/.env
 # Informe LaTeX (se entrega por separado)
 informe/
 
-# ZIP original del profesor
+# Proyecto del profesor — solo es una guía de referencia, NO forma parte de la entrega
+enrollment-certificate/
 enrollment-certificate.zip
 
-# Dependencias Node
-enrollment-certificate/node_modules/
-
-# Build de producción
-enrollment-certificate/dist/
+# Frontend React (mi proyecto) — dependencias y build de producción
+node_modules/
+dist/
+.vercel/
