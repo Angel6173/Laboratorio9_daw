@@ -69,7 +69,10 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://laboratorio9-daw.vercel.app',
 ]
+
+CORS_ALLOW_PRIVATE_NETWORK = True
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',

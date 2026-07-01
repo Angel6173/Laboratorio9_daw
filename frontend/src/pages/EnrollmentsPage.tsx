@@ -34,7 +34,6 @@ export function EnrollmentsPage() {
   return (
     <ResourceView
       title="MATRÍCULAS"
-      description="Relación de estudiantes matriculados en cada curso (tabla courses_students)."
       query={useEnrollments()}
       columns={columns}
       rowKey={(enrollment) => enrollment.id}

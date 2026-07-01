@@ -27,7 +27,6 @@ export function UsersPage() {
   return (
     <ResourceView
       title="USUARIOS"
-      description="Cuentas de acceso registradas en el sistema (sin exponer la contraseña)."
       query={useUsers()}
       columns={columns}
       rowKey={(user) => user.id}

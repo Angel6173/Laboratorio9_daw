@@ -30,7 +30,6 @@ export function TeachersPage() {
   return (
     <ResourceView
       title="DOCENTES"
-      description="Docentes registrados que dictan los cursos de laboratorio."
       query={useTeachers()}
       columns={columns}
       rowKey={(teacher) => teacher.id}

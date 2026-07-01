@@ -1,6 +1,3 @@
-// Cliente HTTP central: añade el JWT en cada petición y gestiona el 401
-// (intenta refrescar el token una vez; si falla, redirige al login).
-
 import {
   API_BASE_URL,
   clearTokens,
@@ -24,7 +21,6 @@ export async function apiFetch<T>(
     },
   })
 
-  // Token expirado: intentamos refrescar una sola vez.
   if (response.status === 401 && retry) {
     const refreshed = await refreshAccessToken()
     if (refreshed) {
@@ -42,9 +38,7 @@ export async function apiFetch<T>(
     try {
       const body = await response.json()
       if (body?.detail) message = body.detail
-    } catch {
-      /* respuesta sin cuerpo JSON */
-    }
+    } catch {}
     throw new Error(message)
   }
 

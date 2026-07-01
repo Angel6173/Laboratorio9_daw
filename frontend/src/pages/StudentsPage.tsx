@@ -40,7 +40,6 @@ export function StudentsPage() {
   return (
     <ResourceView
       title="ESTUDIANTES"
-      description="Estudiantes registrados. Cada fila enlaza con su constancia de matrícula."
       query={useStudents()}
       columns={columns}
       rowKey={(student) => student.id}

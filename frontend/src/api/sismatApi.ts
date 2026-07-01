@@ -1,5 +1,3 @@
-// Funciones de consumo de la API REST del backend (app sismat).
-
 import { apiFetch } from './client'
 import type {
   Course,

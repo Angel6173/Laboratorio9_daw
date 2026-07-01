@@ -23,7 +23,6 @@ export function CoursesPage() {
   return (
     <ResourceView
       title="CURSOS"
-      description="Cursos ofertados con su carga de créditos académicos."
       query={useCourses()}
       columns={columns}
       rowKey={(course) => course.id}

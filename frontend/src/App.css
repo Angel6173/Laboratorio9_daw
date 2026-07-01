@@ -1,11 +1,9 @@
-/* ===================== Layout general (admin) ===================== */
 .admin-shell {
   display: grid;
   grid-template-columns: 250px 1fr;
   min-height: 100vh;
 }
 
-/* ===================== Sidebar ===================== */
 .sidebar {
   background: #16243b;
   color: #e2e8f0;
@@ -93,7 +91,6 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* ===================== Content ===================== */
 .content-area {
   display: flex;
   flex-direction: column;
@@ -123,7 +120,6 @@
   flex: 1;
 }
 
-/* ===================== Cards de recurso ===================== */
 .resource-card {
   background: #ffffff;
   border: 1px solid #d7dde5;
@@ -149,7 +145,6 @@
   color: #16243b;
 }
 
-/* Encabezado de sección (barra azul) */
 .section-header {
   display: flex;
   align-items: stretch;
@@ -172,7 +167,6 @@
   color: #1f2937;
 }
 
-/* ===================== Tabla de datos ===================== */
 .table-wrapper {
   overflow-x: auto;
 }
@@ -242,7 +236,6 @@
   text-decoration: underline;
 }
 
-/* ===================== Badges de estado ===================== */
 .badge {
   display: inline-block;
   padding: 0.18rem 0.6rem;
@@ -267,7 +260,6 @@
   color: #b91c1c;
 }
 
-/* ===================== Estados (loading/error/vacío) ===================== */
 .state-msg {
   padding: 1.25rem;
   text-align: center;
@@ -285,7 +277,6 @@
   color: #6b7280;
 }
 
-/* ===================== Dashboard ===================== */
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -331,7 +322,6 @@
   font-weight: 600;
 }
 
-/* ===================== Búsqueda de constancia ===================== */
 .search-form {
   display: grid;
   gap: 0.75rem;
@@ -378,7 +368,6 @@
   text-decoration: underline;
 }
 
-/* ===================== Login ===================== */
 .login-shell {
   min-height: 100vh;
   display: flex;
@@ -465,7 +454,6 @@
   font-size: 0.9rem;
 }
 
-/* ===================== Constancia de matrícula ===================== */
 .certificate-page {
   max-width: 980px;
 }
@@ -584,7 +572,6 @@
   font-size: 0.9rem;
 }
 
-/* ===================== Responsive ===================== */
 @media (max-width: 860px) {
   .admin-shell {
     grid-template-columns: 1fr;

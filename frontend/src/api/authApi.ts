@@ -1,5 +1,3 @@
-// Manejo de autenticación JWT: login, almacenamiento y refresco de tokens.
-
 export const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ?? 'http://127.0.0.1:8000'
 
@@ -54,7 +52,6 @@ export function isAuthenticated(): boolean {
   return Boolean(getAccessToken())
 }
 
-// Intenta renovar el access token usando el refresh token.
 export async function refreshAccessToken(): Promise<string | null> {
   const refresh = getRefreshToken()
   if (!refresh) return null

@@ -1,5 +1,3 @@
-// Tipos que reflejan los modelos del backend Django (app sismat).
-
 export interface BaseFields {
   id: string
   status: string
@@ -47,8 +45,6 @@ export interface CourseStudent extends BaseFields {
   student: string
   enrollmentDate: string
 }
-
-// --- Constancia de matrícula (endpoint /api/enrollment-certificate/) ---
 
 export interface CertificateTeacher {
   full_name: string

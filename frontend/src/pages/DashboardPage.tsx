@@ -49,12 +49,6 @@ export function DashboardPage() {
 
       <section className="resource-card">
         <h2 className="dashboard-title">Bienvenido al panel SISMAT</h2>
-        <p className="resource-description">
-          Este panel consume la API REST de Django protegida con JWT. Cada
-          tarjeta y sección obtiene sus datos mediante TanStack Query. Usa el
-          menú lateral para explorar cada modelo del sistema o generar una
-          constancia de matrícula de laboratorio.
-        </p>
       </section>
     </div>
   )

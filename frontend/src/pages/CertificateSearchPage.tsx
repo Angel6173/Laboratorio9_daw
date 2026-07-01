@@ -17,11 +17,6 @@ export function CertificateSearchPage() {
   return (
     <section className="resource-card">
       <SectionHeader title="CONSTANCIA DE MATRÍCULA" />
-      <p className="resource-description">
-        Ingresa el ID (UUID) del estudiante para generar su constancia de
-        matrícula de laboratorio. También puedes generarla desde la sección
-        Estudiantes.
-      </p>
       <form className="search-form" onSubmit={handleSubmit}>
         <label>
           ID del Estudiante (UUID)
